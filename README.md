@@ -4,7 +4,7 @@ This project is a workshop for teaching basics of using D3 (version 4.x) and Rea
 ## Credits
 The data used in this project comes from [Five Thirty Eight](https://github.com/fivethirtyeight/data/tree/master/comic-characters).
 
-Big thanks to United Income for letting my try the talk out on my co-workers, and letting me get started prepping it during our Innovation Sprint.
+Big thanks to [United Income](https://unitedincome.com) for letting my try the talk out on my co-workers, and letting me get started prepping it during our Innovation Sprint.
 
 # Bootstrapping
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
