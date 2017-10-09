@@ -33,6 +33,14 @@ class App extends Component {
   }
 
   render() {
+    const moves = [
+      'M70,70',
+      'h150',
+      //'v60',
+      'a30,30 1 0,1 0,60',
+      'h-150',
+      'Z',
+    ];
     return (
       <div className="App">
         <header className="App-header">
@@ -42,6 +50,10 @@ class App extends Component {
         <p className="App-intro">
           { this.state.data ? 'I loaded all the data!' : 'Loading...' }
         </p>
+        <svg width="500px" height="500px">
+          <rect x="0" y="0" width="100" height="100" fill="blue" />
+          <path d={moves.join()} fill="green" />
+        </svg>
       </div>
     );
   }
