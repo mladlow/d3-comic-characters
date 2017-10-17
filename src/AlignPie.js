@@ -7,7 +7,7 @@ const step = 10;
 const padRadians = 2 * Math.PI * 0.01;
 const minPercentageOfTotal = 0.02; // 2 percent
 
-const pieColors = d3i.interpolateRgbBasis([
+export const colors = d3i.interpolateRgbBasis([
   '#7C98B3',
   '#B3B7EE',
   '#AF90A9',
@@ -25,7 +25,7 @@ class PieSlice extends Component {
           startAngle: slice.startAngle,
           endAngle: slice.interpolator(progress),
         })}
-        fill={pieColors(color)} />
+        fill={colors(color)} />
     </g>;
   }
 }

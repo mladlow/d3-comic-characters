@@ -4,6 +4,7 @@ import './App.css';
 import { csvParse } from 'd3-dsv';
 import * as parsers from './dataParsers';
 import AlignPie from './AlignPie';
+import AppearancesOverFirstAppearance from './AppearancesOverFirstAppearance';
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class App extends Component {
         <p className="App-intro">
           { !this.state.data && 'Loading...' }
           { this.state.data && <AlignPie data={parsers.extractAlignmentCounts(this.state.data)} />}
+          { this.state.data && <AppearancesOverFirstAppearance data={this.state.data} /> }
         </p>
       </div>
     );

@@ -7,6 +7,9 @@ export const combineCsvs = (csvArray) => {
       if (!value['ALIGN']) {
         value['ALIGN'] = 'Unknown';
       }
+      if (!value['YEAR'] && value['Year']) {
+        value['YEAR'] = value['Year'];
+      }
       return value;
       });
     return acc.concat(dateFormatted);
